@@ -1,0 +1,21 @@
+/*Имеется целое число, вводимое пользователем с консоли. Это число - сумма денег в рублях.     
+Вывести это число, добавив к нему слово "рубль" в правильном падеже ("рубль", "рублей", "рубля") (if-else && switch)*/
+package _1_procedural;
+
+import java.util.Scanner;
+public class Money {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int rub = scanner.nextInt();
+        if (rub%10==1) {
+            System.out.println(rub + " рубль");
+        }
+        else if (rub%10==2 || rub%10==3 || rub%10==4){
+            System.out.println(rub + " рубля");
+        }
+        else {
+            System.out.println(rub + " рублей");
+        }
+        
+    }
+}
