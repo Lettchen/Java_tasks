@@ -1,0 +1,56 @@
+package _1_procedural;
+
+import java.util.Scanner;
+
+public class Seasons {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int month = scanner.nextInt();
+        switch (month){
+            case 12:
+                System.out.println("Winter ist coming");
+                break;
+            case 1:
+                System.out.println("Winter ist coming");
+                break;
+            case 2:
+                System.out.println("Winter ist coming");
+            break;
+            case 3:
+                System.out.println("Spring is green");
+                break;
+            case 4:
+                System.out.println("Spring is green");
+                break;
+            case 5:
+                System.out.println("Spring is green");
+                break;
+            case 6:
+                System.out.println("Summer is my love");
+                break;
+            case 7:
+                System.out.println("Summer is my love");
+                break;
+            case 8:
+                System.out.println("Summer is my love");
+                break;
+            case 9:
+                System.out.println("Autumn forever");
+                break;
+            case 10:
+                System.out.println("Autumn forever");
+                break;
+            case 11:
+                System.out.println("Autumn forever");
+                break;
+            default:
+                System.out.println("Invalid season");
+        }
+
+
+
+    }
+
+
+
+}
