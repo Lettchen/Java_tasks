@@ -1,0 +1,23 @@
+/*Написать функцию, которая определяет, является ли последняя цифра переданного целого числа – цифрой 3. (является четной/нечетной).*/
+package _1_procedural;
+
+import java.util.Scanner;
+
+public class number3 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+            int a =n/100;
+            int b =a*100;
+            int c =(n-b)/10;
+            int d =c*10;
+            int e =n - b - d;
+            if(e==3){
+                System.out.println("Введённое число оканчивается на 3");
+            }
+            else {
+                System.out.println("Введённое число не оканчивается на 3");
+            }
+
+    }
+}
