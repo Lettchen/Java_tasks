@@ -4,28 +4,28 @@ import java.util.Scanner;
 
 public class Date {
     public static void main(String[] args) {
-        Scanner scanner = new scanner(System.in);
-        int day = scanner.nextInt();
-        int month = scanner.nextInt();
-        int year = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год");
+        int year = scanner.nextInt();
         System.out.println("Введите месяц");
+        int month = scanner.nextInt();
         System.out.println("Введите день");
+        int day = scanner.nextInt();
         switch (month) {
             case 12:
                 if((day>0) && (day<= 31)){
-                System.out.println("Дата верна");
-            }
+                    System.out.println("Дата верна");
+                }
                 else{
                     System.out.println("Дата неверна");
                 }
                 break;
             case 1:
                 if((day>0) && (day<= 31)){
-                System.out.println("Дата верна");
+                    System.out.println("Дата верна");
                 }
                 else {
-                System.out.println("Дата неверна");
+                    System.out.println("Дата неверна");
                 }
                 break;
             case 2:
@@ -118,6 +118,8 @@ public class Date {
                     System.out.println("Дата неверна");
                 }
                 break;
+            default:
+                System.out.println("Дата неверна");
         }
 
     }
