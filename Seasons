@@ -1,3 +1,5 @@
+//Ввод номер месяца, вывод названия.
+
 package _1_procedural;
 
 import java.util.Scanner;
